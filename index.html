@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 id="clock">00:00:00</h2>
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="25"
+        type="text"
+        placeholder="Enter your name"
+      />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <div>
+      <form id="main-todo-form" class="hidden">
+        <input
+          type="text"
+          placeholder="What is your main focus for today?"
+          required
+        />
+      </form>
+
+      <h3 id="main-todo-text" class="hidden">Today you will focus on</h3>
+      <h2 id="main-todo" class="hidden"></h2>
+      <button id="main-todo-reset" class="hidden">reset main todo</button>
+    </div>
+
+    <form id="sub-todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+
+    <ol id="todo-list"></ol>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/main-todo.js"></script>
+  </body>
+</html>
